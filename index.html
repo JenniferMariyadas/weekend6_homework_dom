@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Greenhouse Gas Emissions</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+      <div class="page_title"> <h1>CO2 Emissions</h1> </div>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="country" class="primary">Country</label>
+          <input type="text" id="country" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="global-total" class="primary">Global Total(%)</label>
+          <input name = "global_total" type="text" id="global-total" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="cause" class="primary">Cause</label>
+          <select id="cause">
+            <option value="disabled selected"></option>
+            <option value="Fossil Fuel">Fossil Fuel</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class = "status">
+          <label for="status" class="radio">Paris Treaty</label>
+
+  <input type="radio" name="status" value="yes">Yes<br>
+  <input type="radio" name="status" value="no">No<br>
+  <input type="radio" name="status" value="not_interested"> Not interested <br>
+
+      </div>
+      <input id= "button" type="submit" value="save"/>
+    </form>
+
+      <button id="delete-all">Delete All</button>
+
+    <!-- <h1>CO2 Emissions</h1> -->
+    <div id="co2-emissions"></div>
+  </body>
+</html>
